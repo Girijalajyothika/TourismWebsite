@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Tour</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: url('https://wallpapers.com/images/hd/indian-aesthetic-taj-mahal-nnwi52ldlb8nxl0x.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .content {
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        a {
+            color: #0000cc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Book {{ tour.name }}</h2>
+        <form method="POST">
+            <input type="date" name="date" required><br>
+            <button type="submit">Book Now</button>
+        </form>
+        <br>
+        <a href="{{ url_for('tours', state_name=tour.state_name if tour.state_name else '') }}">Back to Tours</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bookings</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: url('https://wallpapers.com/images/hd/indian-aesthetic-taj-mahal-nnwi52ldlb8nxl0x.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .content {
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+        th {
+            background-color: rgba(0,0,0,0.1);
+        }
+        a {
+            color: #0000cc;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>My Bookings</h2>
+        {% if bookings %}
+            <table>
+                <tr>
+                    <th>Tour Name</th>
+                    <th>State</th>
+                    <th>Date</th>
+                </tr>
+                {% for booking in bookings %}
+                <tr>
+                    <td>{{ booking.tour_name }}</td>
+                    <td>{{ booking.state }}</td>
+                    <td>{{ booking.date }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>You have no bookings yet.</p>
+        {% endif %}
+        <br>
+        <a href="{{ url_for('states') }}">Back to States</a>
+    </div>
+</body>
+</html>

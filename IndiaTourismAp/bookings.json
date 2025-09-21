@@ -1,0 +1,65 @@
+[
+    {
+        "username": "testuser",
+        "tour_id": 1,
+        "tour_name": "Jaipur City Palace Tour",
+        "state": "Rajasthan",
+        "date": "2025-08-13"
+    },
+    {
+        "username": "pranee_007",
+        "tour_id": 6,
+        "tour_name": "Taj Mahal Tour",
+        "state": "Uttar Pradesh",
+        "date": "2025-08-12"
+    },
+    {
+        "username": "admin",
+        "tour_id": 1,
+        "tour_name": "Jaipur City Palace Tour",
+        "state": "Rajasthan",
+        "date": "2025-08-25"
+    },
+    {
+        "username": "admin",
+        "tour_id": 1,
+        "tour_name": "Jaipur City Palace Tour",
+        "state": "Rajasthan",
+        "date": "2025-08-21"
+    },
+    {
+        "username": "admin",
+        "tour_id": 1,
+        "tour_name": "Jaipur City Palace Tour",
+        "state": "Rajasthan",
+        "date": "2025-08-21"
+    },
+    {
+        "username": "admin",
+        "tour_id": 1,
+        "tour_name": "Jaipur City Palace Tour",
+        "state": "Rajasthan",
+        "date": "2025-08-21"
+    },
+    {
+        "username": "admin",
+        "tour_id": 4,
+        "tour_name": "Beach Hopping Tour",
+        "state": "Goa",
+        "date": "2025-08-20"
+    },
+    {
+        "username": "admin",
+        "tour_id": 3,
+        "tour_name": "Backwaters Houseboat Tour",
+        "state": "Kerala",
+        "date": "2025-08-20"
+    },
+    {
+        "username": "admin",
+        "tour_id": 1,
+        "tour_name": "Jaipur City Palace Tour",
+        "state": "Rajasthan",
+        "date": "2025-08-14"
+    }
+]

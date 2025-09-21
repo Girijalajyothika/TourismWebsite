@@ -1,0 +1,35 @@
+{
+  "states": [
+    {
+      "name": "Rajasthan",
+      "tours": [
+        {
+          "id": 1,
+          "name": "Jaipur City Palace Tour",
+          "description": "Explore the royal heritage of Jaipur and its palaces.",
+          "price": 1000,
+          "duration": "4 hours"
+        },
+        {
+          "id": 2,
+          "name": "Desert Safari in Jaisalmer",
+          "description": "Camel rides and cultural performances in the Thar Desert.",
+          "price": 2500,
+          "duration": "1 day"
+        }
+      ]
+    },
+    {
+      "name": "Kerala",
+      "tours": [
+        {
+          "id": 3,
+          "name": "Backwaters Houseboat Tour",
+          "description": "Cruise the serene backwaters in a traditional houseboat.",
+          "price": 3500,
+          "duration": "1 day"
+        }
+      ]
+    }
+  ]
+}

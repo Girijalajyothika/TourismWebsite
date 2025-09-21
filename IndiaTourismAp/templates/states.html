@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>States</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: url('https://wallpapers.com/images/hd/indian-aesthetic-taj-mahal-nnwi52ldlb8nxl0x.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .content {
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        ul { 
+            list-style: none; 
+            padding: 0; 
+        }
+        li { 
+            margin: 10px 0; 
+        }
+        a { 
+            color: #0000cc; 
+            font-size: 20px; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Indian States Tourism</h2>
+        <ul>
+            {% for state in states %}
+                <li><a href="{{ url_for('tours', state_name=state.name) }}">{{ state.name }}</a></li>
+            {% endfor %}
+        </ul>
+        <br>
+        <a href="{{ url_for('mybookings') }}">My Bookings</a> | 
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
